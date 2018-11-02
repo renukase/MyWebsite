@@ -1,0 +1,16 @@
+{
+  "name": "MyWebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d out"
+  },
+  "homepage": "https://renukase.github.io/MyWebsite",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
