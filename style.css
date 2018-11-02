@@ -1,0 +1,93 @@
+html{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  background-color:gray;
+}
+.wrapper {
+  background-color: lightgrey;
+  max-width: 100%;
+  display: flex;
+  height: 100%;
+}
+
+.profile-picture {
+  border-radius: 100%;
+}
+
+.left, .right {
+  background-color: lightblue;
+  
+  margin: 5px;
+  max-width: 50%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left {
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-picture {
+  border-radius: 50%;
+}
+
+.social-links {
+  list-style: none;
+  padding-left: 0px;
+  font-size: 18px;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.social-links a {
+  text-decoration: none;
+  padding: 4px;
+}
+
+.social-links a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: powderblue;
+}
+div {
+  background-color: honeydew;
+}
+h3 {
+    color: black;
+}
+a
+{color: brown}
+table{
+  background-color: wheat;
+}
+thead
+{background-color: gold;}
+}
+
+p  {
+  background-color:grey;
+  color: aliceblue;
+  font-family: 'Courier New'
+  font-size: 1;
+}
+form {
+  background-color:grey;
+  color: aliceblue;
+  font-family: Arial;
+  font-size: 1;
+  }
+
+.btn-primary {
+  color: red
+}

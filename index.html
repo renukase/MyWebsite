@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Renuka Sebastian</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+</head>
+
+<body class = "wrapper">
+    <div class="left">
+       <a href="https://www.linkedin.com/in/renukasebastian/">
+            <img src="0.gif" class="profile-picture">
+            </img>
+        </a>
+        <h3 class="name">
+      Renuka Sebastian
+    </h3>
+    <h4 class="subtitle" id="mybio"> Product Manager at FrontStream</h4>
+    <button id = "myButton" > 
+        Click me
+    </button>
+    </div>
+    <div class="right">
+        <p>
+            <ul >
+            <li>Product Manager with a passion for creating products while providing an exceptional customer experience.</li>
+            <li>Demonstrated technical expertise in business systems analysis and software development.
+            </li>
+            <li> Familiar with Agile environments as scrum product owner and developer.
+            </li>
+            <li> Dynamic leader skilled at gathering and prioritizing product and customer requirements, defining product vision, and overseeing execution throughout product lifecycle. 
+            </li>
+            <li>Adept at collaborating with project stakeholders to understand business requirements. 
+            </li>
+            </ul>
+        </p>
+    </div>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+/*
+function myFunction() {
+  var name = prompt("Enter you name: ");
+  document.getElementById("mybio").innerHTML = "Welcome " + name;
+}
+*/
+
+/*
+function myFavoriteFunction() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("mybio").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "https://jsonplaceholder.typicode.com/todos/1", true);
+  xhttp.send();
+}
+*/
+
+//when the document is ready/loaded
+$(document).ready(function(){
+  //use jQuery to get the button, add a click listener
+  $("#myButton").click(function(){
+    $.ajax({url:"https://jsonplaceholder.typicode.com/todos/1",
+    // method: "GET",
+    // async: true,
+    success: function(result){
+      //var name = promp("what's you name?");
+      $("#mybio").html(result.title);
+    }});
+  });
+});
+</script>
+    <!-- <div >
+        <table style="border: 1px solid">
+            <thead>
+                <tr>
+                    <th>
+                        Year
+                    </th>
+                    <th>
+                        PPG
+                    </th>
+                    <th>
+                        MVP
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        1990-91
+                    </td>
+                    <td>
+                        31.5
+                    </td>
+                    <td>
+                        Yes
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        1991-92
+                    </td>
+                    <td>
+                        30.1
+                    </td>
+                    <td>
+                        Yes
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        1992-93
+                    </td>
+                    <td>
+                        32.6
+                    </td>
+                    <td>
+                        No
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        1995-96
+                    </td>
+                    <td>
+                        30.4
+                    </td>
+                    <td>
+                        Yes
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        1996-97
+                    </td>
+                    <td>
+                        29.6
+                    </td>
+                    <td>
+                        No
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        1997-98
+                    </td>
+                    <td>
+                        28.7
+                    </td>
+                    <td>
+                        Yes
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <ul>
+            <li>
+                1984-1993 Chicago Bulls
+            </li>
+            <li>
+                1995-1998 Chicago Bulls
+            </li>
+            <li>
+                2011-2003 Washington Wizards
+            </li>
+        </ul>
+    </div>
+    <div>
+        <a href="https://www.youtube.com/watch?v=3HDkXuPQlB8">
+        Click For Awesome Highlight Video
+      </a>
+        <h4>
+        Please take this short survey
+      </h4>
+        <form>
+            Email:
+            <input type="email" name="email">
+            </br>
+            <input type="radio" name="pref" value="y"> Yes, please send me lots of emails
+            <input type="radio" name="pref" value="n"> No, please do not send me any emails
+            </br>
+            </br>
+            How did you hear about us?
+            </br>
+            <input type="checkbox" name="source" value="Facebook">Facebook
+            </br>
+            <input type="checkbox" name="source" value="Newspaper">Newspaper
+            </br>
+            <input type="checkbox" name="source" value="Referral">Referral
+            </br>
+            <input type="submit" value="Submit"> -->
+
+</body>
+
+</html>
